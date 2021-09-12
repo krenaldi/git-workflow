@@ -16,8 +16,8 @@ function App() {
 
   return (
     <CartProvider>
-      {cartOpen && <div>Cart...</div>}
-      <Header />
+      {openCart && <div>Cart...</div>}
+      <Header openCart={openCart} />
       <main>
         <Meals />
       </main>
